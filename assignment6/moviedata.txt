@@ -1,0 +1,4 @@
+Movie name :Harry Potter
+Language :English
+CD price  :3000
+Date Of Release :5-10-2000
