@@ -1,5 +1,0 @@
-CD number :
-Movie name :
-Launguage :
-CD price  :
-Date Of Release :

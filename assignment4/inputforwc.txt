@@ -1,1 +1,0 @@
-wc tells you how large a text document is. It counts the number of newlines, words, characters, and bytes in text files.

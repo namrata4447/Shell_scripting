@@ -1,0 +1,6 @@
+aakansha  	  32  	  78965  	  devops
+basavaraj  	  23  	  45678  	  devops
+chaitanya  	  25  	  56783  	  devops
+name  	  age  	  phno  	  dept
+namrata  	  30  	  12345  	  devops
+souwjanya  	  30  	  67890  	  devops
