@@ -26,26 +26,14 @@ else
  fi ;;
 #remove :deletes all entries associated with that name. Do nothing if that name is not in the database. 
 3) read n
-   #nn=$n" "
-   #cat empdata.txt | grep -w $nn | sed -i "/$nn/d" empdata.txt
-   #echo "Entered name deleted from database"
-   #cat empdata.txt ;;
-   if  grep -q $n" " empdata.txt ;
+   nn=$n" "
+  if  grep -q $nn empdata.txt
   then
-	  cat empdata.txt | grep -w $n" " | sed -i "/$n/d" empdata.txt
-           #sed -i "/$nn/d" empdata.txt
+           grep -vRw 'empdata.txt' -e "$nn" > empdata.txt.tmp && mv empdata.txt.tmp empdata.txt
+           echo "Entered name present in database and the record is deleted"
    else
            echo "Database does not have given name"
          fi ;;
-   #a=$(( grep -q $nn empdata.txt ))
-   #if  grep -q $nn empdata.txt ;
-   #if [ $a == 0 ]
-   #then
-   #cat empdata.txt | grep -w $nn | sed -i "/$nn/d" empdata.txt
-	   #echo "Record deleted for the given name"
-   #else
-	   #echo "Database does not have given name"
-	   #fi ;;
 #clear :deletes the entire phonebook
 4) cat empdata.txt | awk '{print $1,$2,$4}' ;;
 #lookup :displays all phone number(s) associated with that name.
