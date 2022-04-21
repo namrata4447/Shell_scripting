@@ -15,8 +15,6 @@ pf=$((10 * ($b + $dp) / 100 ))
 echo "pf is Rs:$pf"
 salary=$(($b + $dp + $da + $hra + $ma- $pf ))
 echo "salary is Rs:$salary"
-else
-echo "Failed"
 fi
 
 
