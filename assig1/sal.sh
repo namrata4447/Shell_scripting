@@ -1,6 +1,8 @@
 #!/bin/bash
 #echo "Enter basic salary amount Rs:"
 #read b
+if [[ $b -gt 0 ]]
+then
 dp=$(( 50 * $b / 100 ))
 echo "dp is Rs:$dp"
 da=$((35 * ($b + $dp) / 100 ))
@@ -13,7 +15,8 @@ pf=$((10 * ($b + $dp) / 100 ))
 echo "pf is Rs:$pf"
 salary=$(($b + $dp + $da + $hra + $ma- $pf ))
 echo "salary is Rs:$salary"
-
-
+else
+echo "Failed"
+fi
 
 
