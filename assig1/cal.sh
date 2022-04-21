@@ -1,7 +1,7 @@
 #!/bin/bash
-$a
-$b
-$op
+#$a
+#$b
+#$op
 
 if [[ $op -eq 1 ]]
 then
