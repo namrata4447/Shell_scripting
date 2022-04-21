@@ -16,6 +16,8 @@ then
 	echo "pf is Rs:$pf"
 	salary=$(($b + $dp + $da + $hra + $ma- $pf ))
 	echo "salary is Rs:$salary"
+else
+	echo "failed"
 fi
 
 
